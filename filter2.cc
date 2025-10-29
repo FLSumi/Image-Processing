@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <cmath>
 using namespace std;
-
+//Testing
 const int RED = 0, GREEN = 1, BLUE = 2;
 //YOU: Write your own filter here - delete the demo code or modify it to suit your purposes
 void filter2(vector<vector<vector<int>>> &vec) {
