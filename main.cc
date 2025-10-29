@@ -99,7 +99,11 @@ int main(int argc, char **argv) {
 		start_time = clock();
 		vec_to_image(image,vec,cols,rows); //Copy from the vec to the image object
 		image.save_png("filter1.png"); //Use this for higher quality output
+<<<<<<< HEAD
 		//image.save_jpeg("filter1.jpg", 80); //Output result after filter 1 with 80% quality
+=======
+//		image.save_jpeg("filter1.jpg", 80); //Output result after filter 1 with 80% quality
+>>>>>>> c3808e34e4c1658a7ef311f48547086ca99f5fdc
 		end_time = clock();
 		cerr << "Time to write filter1.jpg: " << double (end_time - start_time) / CLOCKS_PER_SEC << " secs\n";
 
