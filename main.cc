@@ -98,8 +98,8 @@ int main(int argc, char **argv) {
 		//Save the file after the first filter is run
 		start_time = clock();
 		vec_to_image(image,vec,cols,rows); //Copy from the vec to the image object
-//		image.save_png("filter1.png"); //Use this for higher quality output
-		image.save_jpeg("filter1.jpg", 80); //Output result after filter 1 with 80% quality
+		image.save_png("filter1.png"); //Use this for higher quality output
+//		image.save_jpeg("filter1.jpg", 80); //Output result after filter 1 with 80% quality
 		end_time = clock();
 		cerr << "Time to write filter1.jpg: " << double (end_time - start_time) / CLOCKS_PER_SEC << " secs\n";
 
@@ -110,8 +110,8 @@ int main(int argc, char **argv) {
 		cerr << "Filter 2 time: " << double (end_time - start_time) / CLOCKS_PER_SEC << " secs\n";
 		start_time = clock();
 		vec_to_image(image,vec,cols,rows); //Copy from the vec to the image object
-		//image.save_png("filter2.png"); //Higher quality output
-		image.save_jpeg("filter2.jpg", 80); //Output result after filter 2
+		image.save_png("filter2.png"); //Higher quality output
+		//image.save_jpeg("filter2.jpg", 80); //Output result after filter 2
 		end_time = clock();
 		cerr << "Time to write filter2.jpg: " << double (end_time - start_time) / CLOCKS_PER_SEC << " secs\n";
 
