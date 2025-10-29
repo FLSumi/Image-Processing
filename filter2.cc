@@ -1,4 +1,4 @@
-//Student 2 Name:
+//Student 2 Name: Sean Salcedo
 #include <vector>
 #include <iostream> //IWYU: pragma keep
 #include <iomanip>
@@ -29,6 +29,7 @@ void filter2(vector<vector<vector<int>>> &vec) {
 				vec.at(i).at(j).at(k) *= brightness; //Lighten or darken each color by its distance from the center
 			}
 			//DEMO CODE END
+
 		}
 	}
 }
